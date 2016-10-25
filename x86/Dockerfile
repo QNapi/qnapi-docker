@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get -y install g++ make wget qtbase5-dev pkg-config libmediainfo-dev p7zip \
+RUN apt-get -y install g++ make wget qtbase5-dev pkg-config libmediainfo-dev p7zip-full \
  && cd /tmp \
  && wget https://github.com/QNapi/qnapi/releases/download/0.2.2/qnapi-0.2.2.tar.gz \
  && tar xf qnapi-0.2.2.tar.gz \

@@ -6,7 +6,7 @@ RUN echo "deb http://ports.ubuntu.com/ubuntu-ports/ trusty universe" >> /etc/apt
  && echo "deb-src http://ports.ubuntu.com/ubuntu-ports/ trusty-updates universe" >> /etc/apt/sources.list \
  && apt-get -y update
 
-RUN apt-get -y install g++ make wget qtbase5-dev pkg-config libmediainfo-dev \
+RUN apt-get -y install g++ make wget qtbase5-dev pkg-config libmediainfo-dev p7zip-full \
  && cd /tmp \
  && wget https://github.com/QNapi/qnapi/releases/download/0.2.2/qnapi-0.2.2.tar.gz \
  && tar xf qnapi-0.2.2.tar.gz \
